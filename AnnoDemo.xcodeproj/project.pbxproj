@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D3F63311920C02D00819203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F63301920C02D00819203 /* Foundation.framework */; };
+		7D3F63331920C02D00819203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F63321920C02D00819203 /* CoreGraphics.framework */; };
+		7D3F63351920C02D00819203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F63341920C02D00819203 /* UIKit.framework */; };
+		7D3F633B1920C02D00819203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63391920C02D00819203 /* InfoPlist.strings */; };
+		7D3F633D1920C02D00819203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F633C1920C02D00819203 /* main.m */; };
+		7D3F63411920C02D00819203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63401920C02D00819203 /* AppDelegate.m */; };
+		7D3F63441920C02D00819203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63421920C02D00819203 /* Main.storyboard */; };
+		7D3F63471920C02D00819203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63461920C02D00819203 /* ViewController.m */; };
+		7D3F63491920C02D00819203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63481920C02D00819203 /* Images.xcassets */; };
+		7D3F63501920C02D00819203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F634F1920C02D00819203 /* XCTest.framework */; };
+		7D3F63511920C02D00819203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F63301920C02D00819203 /* Foundation.framework */; };
+		7D3F63521920C02D00819203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F63341920C02D00819203 /* UIKit.framework */; };
+		7D3F635A1920C02D00819203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63581920C02D00819203 /* InfoPlist.strings */; };
+		7D3F635C1920C02D00819203 /* AnnoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F635B1920C02D00819203 /* AnnoDemoTests.m */; };
+		7D3F63681920C33400819203 /* demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63671920C33400819203 /* demo.pdf */; };
+		7D3F63951920C40300819203 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F636C1920C40300819203 /* CGPDFDocument.m */; };
+		7D3F63961920C40300819203 /* PDFPageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F636E1920C40300819203 /* PDFPageConverter.m */; };
+		7D3F63971920C40300819203 /* PDFPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63701920C40300819203 /* PDFPageRenderer.m */; };
+		7D3F63981920C40300819203 /* RoboConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63721920C40300819203 /* RoboConstants.m */; };
+		7D3F63991920C40300819203 /* RoboContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63741920C40300819203 /* RoboContentView.m */; };
+		7D3F639A1920C40300819203 /* RoboDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63761920C40300819203 /* RoboDocument.m */; };
+		7D3F639B1920C40300819203 /* RoboMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63781920C40300819203 /* RoboMainPagebar.m */; };
+		7D3F639C1920C40300819203 /* RoboMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F637A1920C40300819203 /* RoboMainToolbar.m */; };
+		7D3F639D1920C40300819203 /* RoboPDFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F637C1920C40300819203 /* RoboPDFController.m */; };
+		7D3F639E1920C40300819203 /* RoboPDFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F637E1920C40300819203 /* RoboPDFModel.m */; };
+		7D3F639F1920C40300819203 /* RoboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63811920C40300819203 /* RoboViewController.m */; };
+		7D3F63A01920C40300819203 /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63831920C40300819203 /* back_button.png */; };
+		7D3F63A11920C40300819203 /* back_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63841920C40300819203 /* back_button@2x.png */; };
+		7D3F63A21920C40300819203 /* nav_bar_plashka.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63851920C40300819203 /* nav_bar_plashka.png */; };
+		7D3F63A31920C40300819203 /* nav_bar_plashka@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63861920C40300819203 /* nav_bar_plashka@2x.png */; };
+		7D3F63A41920C40300819203 /* page-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63871920C40300819203 /* page-bg.png */; };
+		7D3F63A51920C40300819203 /* page-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63881920C40300819203 /* page-bg@2x.png */; };
+		7D3F63A61920C40300819203 /* page_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63891920C40300819203 /* page_left.png */; };
+		7D3F63A71920C40300819203 /* page_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638A1920C40300819203 /* page_left@2x.png */; };
+		7D3F63A81920C40300819203 /* page_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638B1920C40300819203 /* page_right.png */; };
+		7D3F63A91920C40300819203 /* page_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638C1920C40300819203 /* page_right@2x.png */; };
+		7D3F63AA1920C40300819203 /* progress_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638D1920C40300819203 /* progress_bar.png */; };
+		7D3F63AB1920C40300819203 /* progress_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638E1920C40300819203 /* progress_bar@2x.png */; };
+		7D3F63AC1920C40300819203 /* Stroke2px.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F638F1920C40300819203 /* Stroke2px.png */; };
+		7D3F63AD1920C40300819203 /* Stroke2px@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63901920C40300819203 /* Stroke2px@2x.png */; };
+		7D3F63AE1920C40300819203 /* Stroke2px_single.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63911920C40300819203 /* Stroke2px_single.png */; };
+		7D3F63AF1920C40300819203 /* Stroke2px_single@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63921920C40300819203 /* Stroke2px_single@2x.png */; };
+		7D3F63B01920C40300819203 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63931920C40300819203 /* X.png */; };
+		7D3F63B11920C40300819203 /* X@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63941920C40300819203 /* X@2x.png */; };
+		7D3F63B41920C72300819203 /* AnnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F63B31920C72300819203 /* AnnoViewController.m */; };
+		7D3F63B61921096A00819203 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63B51921096A00819203 /* annotation.png */; };
+		7D3F63B819219A2600819203 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F63B719219A2600819203 /* close.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D3F63531920C02D00819203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3F63251920C02D00819203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3F632C1920C02D00819203;
+			remoteInfo = AnnoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D3F632D1920C02D00819203 /* AnnoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3F63301920C02D00819203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D3F63321920C02D00819203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D3F63341920C02D00819203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D3F63381920C02D00819203 /* AnnoDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnnoDemo-Info.plist"; sourceTree = "<group>"; };
+		7D3F633A1920C02D00819203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D3F633C1920C02D00819203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D3F633E1920C02D00819203 /* AnnoDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnnoDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7D3F633F1920C02D00819203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D3F63401920C02D00819203 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D3F63431920C02D00819203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D3F63451920C02D00819203 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7D3F63461920C02D00819203 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7D3F63481920C02D00819203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D3F634E1920C02D00819203 /* AnnoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3F634F1920C02D00819203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7D3F63571920C02D00819203 /* AnnoDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnnoDemoTests-Info.plist"; sourceTree = "<group>"; };
+		7D3F63591920C02D00819203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D3F635B1920C02D00819203 /* AnnoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnoDemoTests.m; sourceTree = "<group>"; };
+		7D3F63671920C33400819203 /* demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = demo.pdf; sourceTree = "<group>"; };
+		7D3F636B1920C40300819203 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
+		7D3F636C1920C40300819203 /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
+		7D3F636D1920C40300819203 /* PDFPageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageConverter.h; sourceTree = "<group>"; };
+		7D3F636E1920C40300819203 /* PDFPageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageConverter.m; sourceTree = "<group>"; };
+		7D3F636F1920C40300819203 /* PDFPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageRenderer.h; sourceTree = "<group>"; };
+		7D3F63701920C40300819203 /* PDFPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageRenderer.m; sourceTree = "<group>"; };
+		7D3F63711920C40300819203 /* RoboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboConstants.h; sourceTree = "<group>"; };
+		7D3F63721920C40300819203 /* RoboConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboConstants.m; sourceTree = "<group>"; };
+		7D3F63731920C40300819203 /* RoboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboContentView.h; sourceTree = "<group>"; };
+		7D3F63741920C40300819203 /* RoboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboContentView.m; sourceTree = "<group>"; };
+		7D3F63751920C40300819203 /* RoboDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboDocument.h; sourceTree = "<group>"; };
+		7D3F63761920C40300819203 /* RoboDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboDocument.m; sourceTree = "<group>"; };
+		7D3F63771920C40300819203 /* RoboMainPagebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboMainPagebar.h; sourceTree = "<group>"; };
+		7D3F63781920C40300819203 /* RoboMainPagebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboMainPagebar.m; sourceTree = "<group>"; };
+		7D3F63791920C40300819203 /* RoboMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboMainToolbar.h; sourceTree = "<group>"; };
+		7D3F637A1920C40300819203 /* RoboMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboMainToolbar.m; sourceTree = "<group>"; };
+		7D3F637B1920C40300819203 /* RoboPDFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboPDFController.h; sourceTree = "<group>"; };
+		7D3F637C1920C40300819203 /* RoboPDFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboPDFController.m; sourceTree = "<group>"; };
+		7D3F637D1920C40300819203 /* RoboPDFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboPDFModel.h; sourceTree = "<group>"; };
+		7D3F637E1920C40300819203 /* RoboPDFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboPDFModel.m; sourceTree = "<group>"; };
+		7D3F637F1920C40300819203 /* RoboReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboReader.h; sourceTree = "<group>"; };
+		7D3F63801920C40300819203 /* RoboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboViewController.h; sourceTree = "<group>"; };
+		7D3F63811920C40300819203 /* RoboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoboViewController.m; sourceTree = "<group>"; };
+		7D3F63831920C40300819203 /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
+		7D3F63841920C40300819203 /* back_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_button@2x.png"; sourceTree = "<group>"; };
+		7D3F63851920C40300819203 /* nav_bar_plashka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bar_plashka.png; sourceTree = "<group>"; };
+		7D3F63861920C40300819203 /* nav_bar_plashka@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_plashka@2x.png"; sourceTree = "<group>"; };
+		7D3F63871920C40300819203 /* page-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page-bg.png"; sourceTree = "<group>"; };
+		7D3F63881920C40300819203 /* page-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page-bg@2x.png"; sourceTree = "<group>"; };
+		7D3F63891920C40300819203 /* page_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_left.png; sourceTree = "<group>"; };
+		7D3F638A1920C40300819203 /* page_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_left@2x.png"; sourceTree = "<group>"; };
+		7D3F638B1920C40300819203 /* page_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_right.png; sourceTree = "<group>"; };
+		7D3F638C1920C40300819203 /* page_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_right@2x.png"; sourceTree = "<group>"; };
+		7D3F638D1920C40300819203 /* progress_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_bar.png; sourceTree = "<group>"; };
+		7D3F638E1920C40300819203 /* progress_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress_bar@2x.png"; sourceTree = "<group>"; };
+		7D3F638F1920C40300819203 /* Stroke2px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stroke2px.png; sourceTree = "<group>"; };
+		7D3F63901920C40300819203 /* Stroke2px@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stroke2px@2x.png"; sourceTree = "<group>"; };
+		7D3F63911920C40300819203 /* Stroke2px_single.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stroke2px_single.png; sourceTree = "<group>"; };
+		7D3F63921920C40300819203 /* Stroke2px_single@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stroke2px_single@2x.png"; sourceTree = "<group>"; };
+		7D3F63931920C40300819203 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		7D3F63941920C40300819203 /* X@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X@2x.png"; sourceTree = "<group>"; };
+		7D3F63B21920C72300819203 /* AnnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnoViewController.h; sourceTree = "<group>"; };
+		7D3F63B31920C72300819203 /* AnnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnoViewController.m; sourceTree = "<group>"; };
+		7D3F63B51921096A00819203 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
+		7D3F63B719219A2600819203 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3F632A1920C02D00819203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F63331920C02D00819203 /* CoreGraphics.framework in Frameworks */,
+				7D3F63351920C02D00819203 /* UIKit.framework in Frameworks */,
+				7D3F63311920C02D00819203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3F634B1920C02D00819203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F63501920C02D00819203 /* XCTest.framework in Frameworks */,
+				7D3F63521920C02D00819203 /* UIKit.framework in Frameworks */,
+				7D3F63511920C02D00819203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3F63241920C02D00819203 = {
+			isa = PBXGroup;
+			children = (
+				7D3F63361920C02D00819203 /* AnnoDemo */,
+				7D3F63551920C02D00819203 /* AnnoDemoTests */,
+				7D3F632F1920C02D00819203 /* Frameworks */,
+				7D3F632E1920C02D00819203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3F632E1920C02D00819203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F632D1920C02D00819203 /* AnnoDemo.app */,
+				7D3F634E1920C02D00819203 /* AnnoDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3F632F1920C02D00819203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63301920C02D00819203 /* Foundation.framework */,
+				7D3F63321920C02D00819203 /* CoreGraphics.framework */,
+				7D3F63341920C02D00819203 /* UIKit.framework */,
+				7D3F634F1920C02D00819203 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D3F63361920C02D00819203 /* AnnoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63661920C32800819203 /* Resource */,
+				7D3F633F1920C02D00819203 /* AppDelegate.h */,
+				7D3F63401920C02D00819203 /* AppDelegate.m */,
+				7D3F63421920C02D00819203 /* Main.storyboard */,
+				7D3F63451920C02D00819203 /* ViewController.h */,
+				7D3F63461920C02D00819203 /* ViewController.m */,
+				7D3F63B21920C72300819203 /* AnnoViewController.h */,
+				7D3F63B31920C72300819203 /* AnnoViewController.m */,
+				7D3F63481920C02D00819203 /* Images.xcassets */,
+				7D3F63691920C40300819203 /* RoboReader */,
+				7D3F63371920C02D00819203 /* Supporting Files */,
+			);
+			path = AnnoDemo;
+			sourceTree = "<group>";
+		};
+		7D3F63371920C02D00819203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63381920C02D00819203 /* AnnoDemo-Info.plist */,
+				7D3F63391920C02D00819203 /* InfoPlist.strings */,
+				7D3F633C1920C02D00819203 /* main.m */,
+				7D3F633E1920C02D00819203 /* AnnoDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D3F63551920C02D00819203 /* AnnoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F635B1920C02D00819203 /* AnnoDemoTests.m */,
+				7D3F63561920C02D00819203 /* Supporting Files */,
+			);
+			path = AnnoDemoTests;
+			sourceTree = "<group>";
+		};
+		7D3F63561920C02D00819203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63571920C02D00819203 /* AnnoDemoTests-Info.plist */,
+				7D3F63581920C02D00819203 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D3F63661920C32800819203 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63671920C33400819203 /* demo.pdf */,
+				7D3F63B719219A2600819203 /* close.png */,
+				7D3F63B51921096A00819203 /* annotation.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7D3F63691920C40300819203 /* RoboReader */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F636A1920C40300819203 /* Classes */,
+				7D3F63821920C40300819203 /* Graphics */,
+			);
+			path = RoboReader;
+			sourceTree = "<group>";
+		};
+		7D3F636A1920C40300819203 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F636B1920C40300819203 /* CGPDFDocument.h */,
+				7D3F636C1920C40300819203 /* CGPDFDocument.m */,
+				7D3F636D1920C40300819203 /* PDFPageConverter.h */,
+				7D3F636E1920C40300819203 /* PDFPageConverter.m */,
+				7D3F636F1920C40300819203 /* PDFPageRenderer.h */,
+				7D3F63701920C40300819203 /* PDFPageRenderer.m */,
+				7D3F63711920C40300819203 /* RoboConstants.h */,
+				7D3F63721920C40300819203 /* RoboConstants.m */,
+				7D3F63731920C40300819203 /* RoboContentView.h */,
+				7D3F63741920C40300819203 /* RoboContentView.m */,
+				7D3F63751920C40300819203 /* RoboDocument.h */,
+				7D3F63761920C40300819203 /* RoboDocument.m */,
+				7D3F63771920C40300819203 /* RoboMainPagebar.h */,
+				7D3F63781920C40300819203 /* RoboMainPagebar.m */,
+				7D3F63791920C40300819203 /* RoboMainToolbar.h */,
+				7D3F637A1920C40300819203 /* RoboMainToolbar.m */,
+				7D3F637B1920C40300819203 /* RoboPDFController.h */,
+				7D3F637C1920C40300819203 /* RoboPDFController.m */,
+				7D3F637D1920C40300819203 /* RoboPDFModel.h */,
+				7D3F637E1920C40300819203 /* RoboPDFModel.m */,
+				7D3F637F1920C40300819203 /* RoboReader.h */,
+				7D3F63801920C40300819203 /* RoboViewController.h */,
+				7D3F63811920C40300819203 /* RoboViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7D3F63821920C40300819203 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F63831920C40300819203 /* back_button.png */,
+				7D3F63841920C40300819203 /* back_button@2x.png */,
+				7D3F63851920C40300819203 /* nav_bar_plashka.png */,
+				7D3F63861920C40300819203 /* nav_bar_plashka@2x.png */,
+				7D3F63871920C40300819203 /* page-bg.png */,
+				7D3F63881920C40300819203 /* page-bg@2x.png */,
+				7D3F63891920C40300819203 /* page_left.png */,
+				7D3F638A1920C40300819203 /* page_left@2x.png */,
+				7D3F638B1920C40300819203 /* page_right.png */,
+				7D3F638C1920C40300819203 /* page_right@2x.png */,
+				7D3F638D1920C40300819203 /* progress_bar.png */,
+				7D3F638E1920C40300819203 /* progress_bar@2x.png */,
+				7D3F638F1920C40300819203 /* Stroke2px.png */,
+				7D3F63901920C40300819203 /* Stroke2px@2x.png */,
+				7D3F63911920C40300819203 /* Stroke2px_single.png */,
+				7D3F63921920C40300819203 /* Stroke2px_single@2x.png */,
+				7D3F63931920C40300819203 /* X.png */,
+				7D3F63941920C40300819203 /* X@2x.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3F632C1920C02D00819203 /* AnnoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3F635F1920C02D00819203 /* Build configuration list for PBXNativeTarget "AnnoDemo" */;
+			buildPhases = (
+				7D3F63291920C02D00819203 /* Sources */,
+				7D3F632A1920C02D00819203 /* Frameworks */,
+				7D3F632B1920C02D00819203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnoDemo;
+			productName = AnnoDemo;
+			productReference = 7D3F632D1920C02D00819203 /* AnnoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D3F634D1920C02D00819203 /* AnnoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3F63621920C02D00819203 /* Build configuration list for PBXNativeTarget "AnnoDemoTests" */;
+			buildPhases = (
+				7D3F634A1920C02D00819203 /* Sources */,
+				7D3F634B1920C02D00819203 /* Frameworks */,
+				7D3F634C1920C02D00819203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3F63541920C02D00819203 /* PBXTargetDependency */,
+			);
+			name = AnnoDemoTests;
+			productName = AnnoDemoTests;
+			productReference = 7D3F634E1920C02D00819203 /* AnnoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3F63251920C02D00819203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Europesoft;
+				TargetAttributes = {
+					7D3F634D1920C02D00819203 = {
+						TestTargetID = 7D3F632C1920C02D00819203;
+					};
+				};
+			};
+			buildConfigurationList = 7D3F63281920C02D00819203 /* Build configuration list for PBXProject "AnnoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D3F63241920C02D00819203;
+			productRefGroup = 7D3F632E1920C02D00819203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3F632C1920C02D00819203 /* AnnoDemo */,
+				7D3F634D1920C02D00819203 /* AnnoDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3F632B1920C02D00819203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F63491920C02D00819203 /* Images.xcassets in Resources */,
+				7D3F63681920C33400819203 /* demo.pdf in Resources */,
+				7D3F63A91920C40300819203 /* page_right@2x.png in Resources */,
+				7D3F63A41920C40300819203 /* page-bg.png in Resources */,
+				7D3F63A21920C40300819203 /* nav_bar_plashka.png in Resources */,
+				7D3F63A81920C40300819203 /* page_right.png in Resources */,
+				7D3F63A71920C40300819203 /* page_left@2x.png in Resources */,
+				7D3F63A01920C40300819203 /* back_button.png in Resources */,
+				7D3F633B1920C02D00819203 /* InfoPlist.strings in Resources */,
+				7D3F63AB1920C40300819203 /* progress_bar@2x.png in Resources */,
+				7D3F63A51920C40300819203 /* page-bg@2x.png in Resources */,
+				7D3F63AF1920C40300819203 /* Stroke2px_single@2x.png in Resources */,
+				7D3F63AC1920C40300819203 /* Stroke2px.png in Resources */,
+				7D3F63441920C02D00819203 /* Main.storyboard in Resources */,
+				7D3F63AD1920C40300819203 /* Stroke2px@2x.png in Resources */,
+				7D3F63B11920C40300819203 /* X@2x.png in Resources */,
+				7D3F63AA1920C40300819203 /* progress_bar.png in Resources */,
+				7D3F63A11920C40300819203 /* back_button@2x.png in Resources */,
+				7D3F63B819219A2600819203 /* close.png in Resources */,
+				7D3F63A61920C40300819203 /* page_left.png in Resources */,
+				7D3F63B01920C40300819203 /* X.png in Resources */,
+				7D3F63B61921096A00819203 /* annotation.png in Resources */,
+				7D3F63A31920C40300819203 /* nav_bar_plashka@2x.png in Resources */,
+				7D3F63AE1920C40300819203 /* Stroke2px_single.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3F634C1920C02D00819203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F635A1920C02D00819203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3F63291920C02D00819203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F63471920C02D00819203 /* ViewController.m in Sources */,
+				7D3F639A1920C40300819203 /* RoboDocument.m in Sources */,
+				7D3F63981920C40300819203 /* RoboConstants.m in Sources */,
+				7D3F63951920C40300819203 /* CGPDFDocument.m in Sources */,
+				7D3F63B41920C72300819203 /* AnnoViewController.m in Sources */,
+				7D3F639C1920C40300819203 /* RoboMainToolbar.m in Sources */,
+				7D3F63961920C40300819203 /* PDFPageConverter.m in Sources */,
+				7D3F639D1920C40300819203 /* RoboPDFController.m in Sources */,
+				7D3F639B1920C40300819203 /* RoboMainPagebar.m in Sources */,
+				7D3F63991920C40300819203 /* RoboContentView.m in Sources */,
+				7D3F63411920C02D00819203 /* AppDelegate.m in Sources */,
+				7D3F63971920C40300819203 /* PDFPageRenderer.m in Sources */,
+				7D3F633D1920C02D00819203 /* main.m in Sources */,
+				7D3F639F1920C40300819203 /* RoboViewController.m in Sources */,
+				7D3F639E1920C40300819203 /* RoboPDFModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3F634A1920C02D00819203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3F635C1920C02D00819203 /* AnnoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D3F63541920C02D00819203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3F632C1920C02D00819203 /* AnnoDemo */;
+			targetProxy = 7D3F63531920C02D00819203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D3F63391920C02D00819203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3F633A1920C02D00819203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D3F63421920C02D00819203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3F63431920C02D00819203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D3F63581920C02D00819203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3F63591920C02D00819203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D3F635D1920C02D00819203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7D3F635E1920C02D00819203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D3F63601920C02D00819203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnnoDemo/AnnoDemo-Prefix.pch";
+				INFOPLIST_FILE = "AnnoDemo/AnnoDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D3F63611920C02D00819203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnnoDemo/AnnoDemo-Prefix.pch";
+				INFOPLIST_FILE = "AnnoDemo/AnnoDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7D3F63631920C02D00819203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnnoDemo.app/AnnoDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnnoDemo/AnnoDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AnnoDemoTests/AnnoDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7D3F63641920C02D00819203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnnoDemo.app/AnnoDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnnoDemo/AnnoDemo-Prefix.pch";
+				INFOPLIST_FILE = "AnnoDemoTests/AnnoDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3F63281920C02D00819203 /* Build configuration list for PBXProject "AnnoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3F635D1920C02D00819203 /* Debug */,
+				7D3F635E1920C02D00819203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3F635F1920C02D00819203 /* Build configuration list for PBXNativeTarget "AnnoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3F63601920C02D00819203 /* Debug */,
+				7D3F63611920C02D00819203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D3F63621920C02D00819203 /* Build configuration list for PBXNativeTarget "AnnoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3F63631920C02D00819203 /* Debug */,
+				7D3F63641920C02D00819203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D3F63251920C02D00819203 /* Project object */;
+}
